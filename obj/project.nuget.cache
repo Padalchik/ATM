@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V+pndr0Ili+2IAM0SYQ2ay/USyYERQ3HMtCk0TUoCyEGEut/NrDIDhx6TxDIpEJFKMW+nI12VfD+3eAeNUEKSw==",
+  "dgSpecHash": "Vecbd4QVe0rX5lsnGrM9LtkDtEa/NvcOfSGO+0G1Z5z1Za1jMGGJYlI4bMAYWmGbHbE1qYlxtldVqWDMyU2yBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andrey\\source\\repos\\ATM\\ATM.csproj",
+  "projectFilePath": "C:\\git\\ATM\\ATM.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

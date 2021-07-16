@@ -7,6 +7,9 @@ namespace ATM
 {
     class Program
     {
+        /// <summary>
+        /// Глобальная переменная, в которой будет храниться правильная комбинация купюр (ответ).
+        /// </summary>
         public static List<int> ResultBancnotes = new List<int>();
         static void Main(string[] args)
         {
@@ -33,7 +36,7 @@ namespace ATM
             //Парсим прочитанные банкноты в список.
             var bancnotes = ParseToList(containsInATM);
 
-            //Основная функция, которая выдаёт ответ.
+            //Основная функция, которая заполняет глобальный список.
             FillResultBancnotes(input, bancnotes);
 
             //Если получилось "набрать" необходимые банкноты, то выводим данные в необходимом формате.
@@ -51,18 +54,32 @@ namespace ATM
                 return;
             }
         }
+
+        /// <summary>
+        /// Выдача сообщения о том, что банкноты выдать невозможно
+        /// </summary>
         public static void ErrorMessage()
         {
             System.Console.WriteLine("Невозможно выдать банкноты");
         }
+
+        /// <summary>
+        /// Функция, которая заполняет глобальный список.
+        /// </summary>
+        /// <param name="Sum">Число, которое необходимо набрать из банкнот</param>
+        /// <param name="bancnotes">Доступные банкноты</param>
         public static void FillResultBancnotes(int Sum, List<int> bancnotes)
         {
             FindSumByBancnotes(Sum, bancnotes);
         }
 
-        //Функция, которая рекурсивно вызывается.
-        //Берёт на вход сумму, которую нужно найти и список доступных банкнот.
-        public static List<int> FindSumByBancnotes (int Sum, List<int> bancnotes)
+        /// <summary>
+        /// Функция, которая рекурсивно вызывается и заполняет глобальный список.
+        /// </summary>
+        /// <param name="Sum">Число, которое необходимо набрать из банкнот</param>
+        /// <param name="bancnotes">Доступные банкноты</param>
+        /// <returns>Список банкнот которыми удалось набрать необходимое число</returns>
+        public static List<int> FindSumByBancnotes(int Sum, List<int> bancnotes)
         {
             for (int i = 0; i <= bancnotes.Count - 1; i++)
             {
@@ -89,18 +106,32 @@ namespace ATM
             }
             return null;
         }
-        public static List<int> ParseToList(Dictionary<int,int> ATM)
+
+        /// <summary>
+        /// Парсер банкнот в список
+        /// </summary>
+        /// <param name="ATM">Словарь с номиналом купюр и их колличеством</param>
+        /// <returns>Список доступных купюр</returns>
+        public static List<int> ParseToList(Dictionary<int, int> ATM)
         {
             var bancnotes = new List<int>();
             foreach (var rating in ATM.Keys)
             {
-                for (int i = 0; i < ATM[rating]; i++)
+                int i = 0;
+                while (i < ATM[rating])
                 {
                     bancnotes.Add(rating);
+                    i++;
                 }
             }
             return bancnotes;
         }
+
+        /// <summary>
+        /// Чтение банкнот из файла
+        /// </summary>
+        /// <param name="filePath">Путь к файлу</param>
+        /// <returns>Словарь с номиналом купюр и их колличеством, либо null если не удалось обработать данные</returns>
         public static Dictionary<int, int> ParseTextFile(string filePath)
         {
             try

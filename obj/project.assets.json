@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\ATM\\ATM.csproj",
+      "projectUniqueName": "C:\\git\\ATM\\ATM.csproj",
       "projectName": "ATM",
-      "projectPath": "C:\\Users\\Andrey\\source\\repos\\ATM\\ATM.csproj",
+      "projectPath": "C:\\git\\ATM\\ATM.csproj",
       "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrey\\source\\repos\\ATM\\obj\\",
+      "outputPath": "C:\\git\\ATM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

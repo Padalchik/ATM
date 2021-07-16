@@ -11,3 +11,16 @@ C:\Users\Andrey\source\repos\ATM\obj\Debug\netcoreapp3.1\ATM.csproj.CoreCompileI
 C:\Users\Andrey\source\repos\ATM\obj\Debug\netcoreapp3.1\ATM.dll
 C:\Users\Andrey\source\repos\ATM\obj\Debug\netcoreapp3.1\ATM.pdb
 C:\Users\Andrey\source\repos\ATM\obj\Debug\netcoreapp3.1\ATM.genruntimeconfig.cache
+C:\git\ATM\bin\Debug\netcoreapp3.1\ATM.exe
+C:\git\ATM\bin\Debug\netcoreapp3.1\ATM.deps.json
+C:\git\ATM\bin\Debug\netcoreapp3.1\ATM.runtimeconfig.json
+C:\git\ATM\bin\Debug\netcoreapp3.1\ATM.runtimeconfig.dev.json
+C:\git\ATM\bin\Debug\netcoreapp3.1\ATM.dll
+C:\git\ATM\bin\Debug\netcoreapp3.1\ATM.pdb
+C:\git\ATM\obj\Debug\netcoreapp3.1\ATM.csprojAssemblyReference.cache
+C:\git\ATM\obj\Debug\netcoreapp3.1\ATM.AssemblyInfoInputs.cache
+C:\git\ATM\obj\Debug\netcoreapp3.1\ATM.AssemblyInfo.cs
+C:\git\ATM\obj\Debug\netcoreapp3.1\ATM.csproj.CoreCompileInputs.cache
+C:\git\ATM\obj\Debug\netcoreapp3.1\ATM.dll
+C:\git\ATM\obj\Debug\netcoreapp3.1\ATM.pdb
+C:\git\ATM\obj\Debug\netcoreapp3.1\ATM.genruntimeconfig.cache
